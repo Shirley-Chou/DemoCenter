@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>华为</title>
+    <meta name="author" content="HYZ:276750838" />
+    <meta name="description" content="华为" />
+    <meta name="keywords" content="华为" />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" type="text/css" href="js/dist/jquery.fullpage.min.css" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/h.css">
+</head>
+
+<body class="h-eservice">
+    <!-- topbar -->
+    <div class="h-topbar-bg">
+        <div class="h-topbar">
+            <div class="h-logo"><a href="index.html"></a></div>
+            <div class="h-topbar-menu">
+                <ul>
+                    <li>
+                        <a href="index.html"><span>Online Storage Lab</span></a>
+                    </li>
+                    <li>
+                        <a href="all_solution.html"><span>Solution</span></a>
+                        <div class="h-topbar-menu-two">
+                            <div class="h-topbar-menu-two-m">
+                                <ul class="box-orient-h" style="padding:0 620px 0 320px">
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dd><a href="solution_staas.html">STaaS</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dd><a href="solution_cdm.html">CDM</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dd><a href="solution_fusion.html">FusionROBO</a></dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product_catalogy.html" class="on"><span>Product</span></a>
+                        <div class="h-topbar-menu-two">
+                            <div class="h-topbar-menu-two-m">
+                                <ul class="box-orient-h">
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dt>AFAs</dt>
+                                            <dd><a href="product_dorado.html">OceanStor Dorado V3</a></dd>
+                                            <dd><a href="javascript:void(0)" class="disabled">OceanStor 18000F V5</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dt>Hybrid-Flash Storage</dt>
+                                            <dd><a href="javascript:void(0)" class="disabled">OceanStor 18500/18800 V5</a></dd>
+                                            <dd><a href="javascript:void(0)" class="disabled">OceanStor 6800 V5</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dt>Cloud Storage</dt>
+                                            <dd><a href="fusionstorage_evs.html">FusionStorage EVS</a></dd>
+                                            <dd><a href="javascript:void(0)" class="disabled">FusionStorage OBS</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dt>Centralized Intelligent O&M</dt>
+                                            <dd><a href="product_eservice.html">eService</a></dd>
+                                            <dd><a href="javascript:void(0)" class="disabled">eSight</a></dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="disabled"><span>Course</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="disabled"><span>BBS</span></a>
+                    </li>
+                    <li class="lab"><a href="javascript:void(0)" class="disabled"><span><i class="icon-lab"></i>Lab</span></a></li>
+                </ul>
+            </div>
+
+            <div class="h-login">
+                <a href="javascript:void(0)" class="disabled"><i class="icon icon-m"></i></a>
+                <em></em>
+                <a href="javascript:void(0)" class="disabled">
+                    <i class="icon icon-user"></i>
+                    <span>Kristina</span>
+                    <i class="icon icon-xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="fullPage">
+        <div class="section active" id="section0">
+            <!-- banner -->
+            <div class="h-banner-bg">
+                <div class="h-banner">
+                    <div class="box-orient-h">
+                        <div class="h-banner-text">
+                            <h3>eService</h3>
+                            <!-- <em>AI storage operation and maintenance</em>
+            <p>Smart insight into storage performance & capacity trends in advance, simplifying management; proactive defense ensures storage high availability & high performance.</p> -->
+                            <em>AI-powered storage O&M</em>
+                            <p>Intelligently identifies storage performance and capacity trend in advance, simplifying
+                                management. Proactive defense ensures high availability and high performance of storage
+                                devices.</p>
+                            <a href="http://itlabs.huawei.com:8010" target="_blank">INTERACTIVE Demo</a>
+                        </div>
+                        <div class="box-flex h-banner-v">
+                            <canvas id="canvas-banner" width="600" height="600"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section1" style="background: #fafafa;">
+            <div class="h-pa-bg">
+                <div class="h-pa">
+                    <h3>Product Advantages</h3>
+                    <div class="h-pa-content">
+                        <ul class="box-orient-h">
+                            <li class="box-flex">
+                                <h5>Cost Effectiveness</h5>
+                                <img src="images/pa-01.jpg" alt="">
+                                <em>Supports data-driven IT organization transformation.</em>
+                                <ul>
+                                    <li>Monitors and predicts capacity usage, effectively predicting data requirements
+                                        to provide capacity expansion and recycling suggestions.</li>
+                                    <li>Intelligent disk fault prediction improves data asset security.</li>
+                                    <li>Provides configuration optimization suggestions based on the performance
+                                        regularity.</li>
+                                </ul>
+                            </li>
+                            <li class="box-flex">
+                                <h5>Efficiency Improvement</h5>
+                                <img src="images/pa-02.jpg" alt="">
+                                <em>Exposes risk factors based on historical data to avoid problems.</em>
+                                <ul>
+                                    <li>Automatically monitors data with 24/7 hours, improving O&M efficiency</li>
+                                    <li>Automatically reports faults and creates work orders to reduce support costs.</li>
+                                    <li>Automatically predicts performance capacity with an accuracy rate of 82%.</li>
+                                </ul>
+                            <li class="box-flex">
+                                <h5>Data Security</h5>
+                                <img src="images/pa-03.jpg" alt="">
+                                <em>Exposes risk factors based on historical data to avoid problems.</em>
+                                <ul>
+                                    <li>All operations performed on the eService client are recorded, and integrity
+                                        check is performed on data to prevent data tampering.</li>
+                                    <li>Bidirectional authentication is implemented between eService and Huawei clouds.
+                                    </li>
+                                    <li>Information security complies with the ISO/IEC 27001:2013 Standard. Data is
+                                        stored and encrypted using AES 256.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section2">
+            <div class="h-as-bg">
+                <div class="h-as-bg-gray"></div>
+                <div class="h-as-bg-white"></div>
+                <div class="h-as">
+                    <h3>Application Scenario</h3>
+                    <div class="h-as-cp">
+                        <div class="box-orient-h h-as-cp-content">
+                            <div class="box-flex h-as-v">
+                                <canvas id="canvas-as-1" width="600" height="600"></canvas>
+                            </div>
+                            <div class="box-flex h-as-cp-text">
+                                <h5>Capacity Plan</h5>
+                                <dl class="box-orient-h">
+                                    <dt><img src="images/as-01.jpg"></dt>
+                                    <dd class="box-flex">
+                                        Provides capacity planning suggestions for 365 days, reducing TCO.
+                                    </dd>
+                                </dl>
+                                <ul>
+                                    <li>Predicts the capacity trend in the next 365 days and provides procurement
+                                        suggestions.</li>
+                                    <li>Identifies overloaded resources and provides detailed capacity expansion
+                                        solutions.</li>
+                                    <li>Identifies idle resources and provides detailed recovery suggestions.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <div class="h-as-bg h-fz">
+                <div class="h-as">
+                    <div class="h-as-bg-white"></div>
+                    <div class="h-as-bg-gray"></div>
+                    <div class="h-as-cp">
+                        <div class="box-orient-h h-as-cp-content">
+                            <div class="box-flex h-as-cp-text">
+                                <h5>Performance Forecasting</h5>
+                                <dl class="box-orient-h">
+                                    <dt><img src="images/as-03.jpg"></dt>
+                                    <dd class="box-flex">
+                                        Predicts performance in the next 60 days to identify performance risks.
+                                    </dd>
+                                </dl>
+                                <ul>
+                                    <li>100,000+ storage devices, 20,000,000,000+ feature data, and 1,000+ scenarios,
+                                        providing data sources for performance analysis</li>
+                                    <li>Intelligently predicts performance trends in the next 60 days to assess
+                                        performance bottlenecks.</li>
+                                    <li>Intelligently analyzes the tidal pattern of services to determine the time
+                                        window for O & M change transactions.</li>
+                                </ul>
+                            </div>
+                            <div class="box-flex h-as-v">
+                                <canvas id="canvas-as-2" width="600" height="600"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section4">
+            <div class="h-as-bg">
+                <div class="h-as">
+                    <div class="h-as-bg-gray"></div>
+                    <div class="h-as-bg-white"></div>
+                    <div class="h-as-cp">
+                        <div class="box-orient-h h-as-cp-content">
+                            <div class="box-flex h-as-v">
+                                <canvas id="canvas-as-3" width="600" height="600"></canvas>
+                            </div>
+                            <div class="box-flex h-as-cp-text">
+                                <h5>Intelligently Identifying Risky Disks</h5>
+                                <dl class="box-orient-h">
+                                    <dt><img src="images/as-04.jpg"></dt>
+                                    <dd class="box-flex">
+                                        Identifies disk risks 14 days in advance to avoid service impact.
+                                    </dd>
+                                </dl>
+                                <ul>
+                                    <li>Analyzes 200,000+ disks and 20,000,000,000+ pieces of feature data.</li>
+                                    <li>Uses algorithm such as XGBoost, with an 82% identification rate and the less
+                                        than 0.1% false alarm rate.</li>
+                                    <li>Verifies models from enterprise data centers for more than 300 days to identify
+                                        disk risks 14 days in advance.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section5">
+            <div class="h-cc-bg">
+                <div class="h-cc">
+                    <h3>Customer Case</h3>
+                    <div class="h-cc-content">
+                        <div class="h-cc-content-list">
+                            <ul class="box-orient-h">
+                                <li class="box-flex">
+                                    <img src="images/cc-01.jpg" alt="">
+                                    <h5>Desktop cloud site of<br>Carrier in Guilin</h5>
+                                </li>
+                                <li class="box-flex">
+                                    <img src="images/cc-02.jpg" alt="">
+                                    <h5>XXX Data Center</h5>
+                                </li>
+                                <li class="box-flex">
+                                    <img src="images/cc-03.jpg" alt="">
+                                    <h5>XXX Civil Aviation<br>Information Network</h5>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="h-cc-content-view hide">
+                            <div class="h-cc-content-view-c">
+                                <div class="h-cc-content-view-c-img">
+                                    <img src="images/p-ss-view-01.jpg" alt="">
+                                    <div class="h-cc-content-view-c-img-mask"></div>
+                                </div>
+                                <div class="box-orient-h h-cc-content-view-c-text fadeInUp animated0-5">
+                                    <div class="box-flex h-cc-content-view-text-box">
+                                        <h5>Desktop Cloud Site of Carrier in Guilin</h5>
+                                        <p>18:11:47 January 14, 2018 eService reported multiple alarms about high disk
+                                            temperature and abnormal air conditioner and maintenance personnel handled
+                                            these problems in time to avoid unsatisfied user experiences.</p>
+                                    </div>
+                                    <div class="box-flex h-cc-content-view-text-box">
+                                        <img src="images/p-ss-view-r.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-cc-content-view hide">
+                            <div class="h-cc-content-view-c">
+                                <div class="h-cc-content-view-c-img">
+                                    <img src="images/p-ss-view-02.jpg" alt="">
+                                    <div class="h-cc-content-view-c-img-mask"></div>
+                                </div>
+                                <div class="box-orient-h h-cc-content-view-c-text fadeInUp animated0-5">
+                                    <div class="box-flex h-cc-content-view-text-box">
+                                        <h5>XXX Data Center</h5>
+                                        <p>
+                                            17:28:16 June 5, 2018 eService disk risk prediction service predicted a
+                                            failing disk and service engineers replaced the disk in time to avoid
+                                            storage performance fluctuation caused by disk faults and affected
+                                            upper-layer services.
+                                        </p>
+                                    </div>
+                                    <div class="box-flex h-cc-content-view-text-box">
+                                        <img src="images/p-ss-view-r2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-cc-content-view hide">
+                            <div class="h-cc-content-view-c">
+                                <div class="h-cc-content-view-c-img">
+                                    <img src="images/p-ss-view-03.jpg" alt="">
+                                    <div class="h-cc-content-view-c-img-mask"></div>
+                                </div>
+                                <div class="box-orient-h h-cc-content-view-c-text fadeInUp animated0-5">
+                                    <div class="box-flex h-cc-content-view-text-box">
+                                        <h5>XXX Civil Aviation Information Network</h5>
+                                        <p>
+                                            20:43:06 January 31, 2018 eService remote monitoring detected a critical
+                                            alarm about controller overload at the site of XX civil aviation
+                                            information network. After confirming the trouble ticket with the customer,
+                                            O&M personnel remotely collected storage logs, analyzed the root cause
+                                            using the log analysis service, and quickly resolved customer problems.
+                                        </p>
+                                    </div>
+                                    <div class="box-flex h-cc-content-view-text-box">
+                                        <img src="images/p-ss-view-r3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="h-footer-bg">
+        <div class="h-footer">
+            <p>Copyright © 2018 Huawei Technologies Co., Ltd. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- 预加载动画图片 -->
+    <img class="h-preloading" src="images/banner.png">
+    <img class="h-preloading" src="images/pe-as-1.png">
+    <img class="h-preloading" src="images/pe-as-2.png">
+    <img class="h-preloading" src="images/pe-as-3.png">
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/dist/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullPage').fullpage({
+                //每一页幻灯片的内容是否垂直居中
+                verticalCentered: false,
+                //字体是否随着窗口缩放而缩放
+                resize: true,
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['eService', 'Product Advantages', 'Application Scenario:Capacity Plan', 'Application Scenario:Performance Forecasting', 'Intelligently Identifying Risky Disks', 'Customer Case'],
+                afterLoad: function (anchorLink, index) {
+                    if (index == 1) {
+                        //banner动画
+                        var bOpt = {
+                            "obj": "#canvas-banner",
+                            "url": "images/banner.png",
+                            "xnum": 5,
+                            "ynum": 6
+                        }
+                        initMove(bOpt);
+                    } else if (index == 2) {
+                        clearCanvas("#canvas-banner");
+                        clearCanvas("#canvas-as-1");
+                    } else if (index == 3) {
+                        var bOpt = {
+                            "obj": "#canvas-as-1",
+                            "url": "images/pe-as-1.png",
+                            "xnum": 5,
+                            "ynum": 6
+                        }
+                        initMove(bOpt);
+                        clearCanvas("#canvas-as-2");
+                    } else if (index == 4) {
+                        var bOpt = {
+                            "obj": "#canvas-as-2",
+                            "url": "images/pe-as-2.png",
+                            "xnum": 5,
+                            "ynum": 6
+                        }
+                        initMove(bOpt);
+                        clearCanvas("#canvas-as-1");
+                        clearCanvas("#canvas-as-3");
+                    } else if (index == 5) {
+                        var bOpt = {
+                            "obj": "#canvas-as-3",
+                            "url": "images/pe-as-3.png",
+                            "xnum": 5,
+                            "ynum": 6
+                        }
+                        initMove(bOpt);
+                        clearCanvas("#canvas-as-2");
+                    }
+
+                    if (index == $(".section").length) {
+                        $(".h-footer-bg").show().addClass("slideInUp animated");
+                    }
+                },
+                onLeave: function (index, direction) {
+                    $(".h-footer-bg").removeClass("slideInUp animated").hide();
+                }
+            });
+
+
+            //案例动画
+            var al = 0;
+            $('.h-cc-content-list li').unbind("mouseover").bind("mouseover", function () {
+                al = $('.h-cc-content-list li').index(this);
+                $(this).css("opacity", 0);
+                $('.h-cc-content-view').addClass("hide");
+                $('.h-cc-content-view').eq(al).removeClass("hide");
+                for (var i = 0; i < $('.h-cc-content-list li').length; i++) {
+                    if (i < al) {
+                        $('.h-cc-content-list li').eq(i).addClass("fadeOutLeft animated0-2");
+                    } else if (i > al) {
+                        $('.h-cc-content-list li').eq(i).addClass("fadeOutRight animated0-2");
+                    }
+                }
+            });
+            $('.h-cc-content').unbind("mouseleave").bind("mouseleave", function () {
+                $('.h-cc-content-view').addClass("hide");
+                for (var i = 0; i < $('.h-cc-content-list li').length; i++) {
+                    $('.h-cc-content-list li').eq(i).css("opacity", 1).removeClass("fadeOutLeft animated0-2").removeClass("fadeOutRight animated0-2");
+                }
+            });
+
+            document.cookie = "language=en";
+        });
+    </script>
+</body>
+
+</html>

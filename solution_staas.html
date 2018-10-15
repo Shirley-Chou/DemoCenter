@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>华为</title>
+    <meta name="author" content="HYZ:276750838" />
+    <meta name="description" content="华为" />
+    <meta name="keywords" content="华为" />
+    <meta name="Resource-type" content="Document" />
+
+    <link rel="stylesheet" type="text/css" href="js/dist/jquery.fullpage.min.css" />
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/h.css">
+</head>
+
+<body class="h-staas">
+    <!-- topbar -->
+    <div class="h-topbar-bg">
+        <div class="h-topbar">
+            <div class="h-logo"><a href="index.html"></a></div>
+            <div class="h-topbar-menu">
+                <ul>
+                    <li>
+                        <a href="index.html"><span>Online Storage Lab</span></a>
+                    </li>
+                    <li>
+                        <a href="all_solution.html" class="on"><span>Solution</span></a>
+                        <div class="h-topbar-menu-two">
+                            <div class="h-topbar-menu-two-m">
+                                <ul class="box-orient-h" style="padding:0 620px 0 320px">
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dd><a href="solution_staas.html" class="on">STaaS</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dd><a href="solution_cdm.html">CDM</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dd><a href="solution_fusion.html">FusionROBO</a></dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="product_catalogy.html"><span>Product</span></a>
+                        <div class="h-topbar-menu-two">
+                            <div class="h-topbar-menu-two-m">
+                                <ul class="box-orient-h">
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dt>AFAs</dt>
+                                            <dd><a href="product_dorado.html">OceanStor Dorado V3</a></dd>
+                                            <dd><a href="javascript:void(0)" class="disabled">OceanStor 18000F V5</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dt>Hybrid-Flash Storage</dt>
+                                            <dd><a href="javascript:void(0)" class="disabled">OceanStor 18500/18800 V5</a></dd>
+                                            <dd><a href="javascript:void(0)" class="disabled">OceanStor 6800 V5</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dt>Cloud Storage</dt>
+                                            <dd><a href="fusionstorage_evs.html">FusionStorage EVS</a></dd>
+                                            <dd><a href="javascript:void(0)" class="disabled">FusionStorage OBS</a></dd>
+                                        </dl>
+                                    </li>
+                                    <li class="box-flex">
+                                        <dl>
+                                            <dt>Centralized Intelligent O&M</dt>
+                                            <dd><a href="product_eservice.html">eService</a></dd>
+                                            <dd><a href="javascript:void(0)" class="disabled">eSight</a></dd>
+                                        </dl>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="disabled"><span>Course</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)" class="disabled"><span>BBS</span></a>
+                    </li>
+                    <li class="lab"><a href="javascript:void(0)" class="disabled"><span><i class="icon-lab"></i>Lab</span></a></li>
+                </ul>
+            </div>
+
+            <div class="h-login">
+                <a href="javascript:void(0)" class="disabled"><i class="icon icon-m"></i></a>
+                <em></em>
+                <a href="javascript:void(0)" class="disabled">
+                    <i class="icon icon-user"></i>
+                    <span>Kristina</span>
+                    <i class="icon icon-xl"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="fullPage">
+        <div class="section active" id="section0">
+            <!-- banner -->
+            <div class="h-banner-bg">
+                <div class="h-banner">
+                    <div class="box-orient-h">
+                        <div class="h-banner-text">
+                            <h3>Storage as a Service<br> (STaaS) </h3>
+                            <p>Supports automatic storage service provisioning, intelligent data management, and moving
+                                mission-critical services to the cloud, accelerating digital transformation at data
+                                centers.</p>
+                            <a href="http://itlabs.huawei.com:8000" target="_blank">INTERACTIVE Demo</a>
+                        </div>
+                        <div class="box-flex h-banner-v">
+                            <canvas id="canvas-banner" width="600" height="600"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section1" style="background: #fafafa;">
+            <div class="h-sso-bg">
+                <div class="h-sso">
+                    <h3>STaaS solution overview</h3>
+                    <div class="h-sso-content">
+                        <div class="box-orient-h">
+                            <div class="box-flex">
+                                <canvas id="canvas-sso" width="600" height="600"></canvas>
+                            </div>
+                            <div class="box-flex h-sso-content-li">
+                                <ul>
+                                    <li>
+                                        <em>Various storage services</em>
+                                        <span>Automatically allocates storage resources and achieves minute-level TTM.</span>
+                                    </li>
+                                    <li>
+                                        <em>On- and off-premises data collaboration</em>
+                                        <span>Enables on-demand data flow and reduces TCO by 20%.</span>
+                                    </li>
+                                    <li>
+                                        <em>Intelligent maintenance and prediction</em>
+                                        <span>Flexibly changes SLA and improves efficiency by 50%. </span>
+                                    </li>
+                                    <li>
+                                        <em>Unified multi-device management</em>
+                                        <span>Simplifies multi-vendor device management and improves efficiency by 50%.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section2" style="background: #fafafa;">
+            <div class="h-pa-bg">
+                <div class="h-pa">
+                    <h3>Advantages</h3>
+                    <div class="h-sso-a-content">
+                        <ul class="box-orient-h">
+                            <li class="box-flex">
+                                <h5>Rich Services</h5>
+                                <img src="images/pa-04.jpg" alt="">
+                                <em>Supports multiple cloud platforms</em>
+                                <span>Delivers a variety of storage and data protection services for various cloud
+                                    platforms, such as Huawei FusionCloud private cloud, vRealize private cloud, and
+                                    other third-party cloud platforms.</span>
+                                <em>Supports multiple features</em>
+                                <span>Provides common storage services (e.g., blocks, files, and objects) and data
+                                    protection services such as snapshots, replication, active-active, and backup.</span>
+                            </li>
+                            <li class="box-flex">
+                                <h5>Easy Management</h5>
+                                <img src="images/pa-05.jpg" alt="">
+                                <em>Self-help services</em>
+                                <span>Automatically provides storage resources and enables minute-level TTM based on
+                                    service catalogs and SLAs to quickly respond to business needs.<br>&nbsp;</span>
+                                <em>Unified service and O&M interfaces</em>
+                                <span>Offers a unified interface for managing storage services and service-related O&M
+                                    monitoring (alarms, capacity, and performance) without frequent switchovers,
+                                    greatly simplifying operations. </span>
+                            <li class="box-flex">
+                                <h5>Intelligent Data</h5>
+                                <img src="images/pa-06.jpg" alt="">
+                                <em>Intelligent prediction</em>
+                                <span>Monitors storage service quality based on service objectives; provides
+                                    performance and capacity statistics reports, and predicts capacity trends based on
+                                    such statistics to support service planning and shortens analysis time for service
+                                    decisions such as capacity expansion, procurement, and migration.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section3">
+            <div class="h-as-bg">
+                <div class="h-as-bg-gray"></div>
+                <div class="h-as-bg-white"></div>
+                <div class="h-as">
+                    <h3>Application Scenario</h3>
+                    <div class="h-as-cp">
+                        <div class="box-orient-h h-as-cp-content">
+                            <div class="box-flex h-as-v">
+                                <canvas id="canvas-as-1" width="600" height="600"></canvas>
+                                <div class="h-as-v-cinfo">
+                                    <h5>OceanStor DJ + OceanStor Dorado/OceanStor F V5</h5>
+                                    <div class="h-as-v-yuan-box">
+                                        <div class="h-as-v-yuan">
+                                            <i class="icon icon-billing"></i>
+                                            <em>Billing</em>
+                                        </div>
+                                        <div class="h-as-v-yuan">
+                                            <i class="icon icon-erp"></i>
+                                            <em>ERP</em>
+                                        </div>
+                                        <div class="h-as-v-yuan">
+                                            <i class="icon icon-bi"></i>
+                                            <em>BI</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-flex h-as-cp-text">
+                                <h5>Core Enterprise Service Applications<br>(mission-critical applications)</h5>
+                                <dl class="box-orient-h">
+                                    <dt><img src="images/ss-01.jpg"></dt>
+                                    <dd class="box-flex">
+                                        <em>Scenario characteristics</em>
+                                        <span>Requires high data read/write performance, no core service data lost,
+                                            and1-2 ms latency and adopts the active-active protection solution with
+                                            zero RPO.</span>
+                                    </dd>
+                                </dl>
+                                <dl class="box-orient-h">
+                                    <dt><img src="images/ss-02.jpg"></dt>
+                                    <dd class="box-flex">
+                                        <em>Application scenarios</em>
+                                        <span>Service systems such as charging, BI, and ERP in enterprises</span>
+                                    </dd>
+                                </dl>
+                                <dl class="box-orient-h">
+                                    <dt><img src="images/ss-03.jpg"></dt>
+                                    <dd class="box-flex">
+                                        <em>Recommended solution</em>
+                                        <span>It is advised that OceanStor DJ be used with OceanStor Dorado series and
+                                            OceanStor F V5 series.</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section4">
+            <div class="h-as-bg h-fz">
+                <div class="h-as">
+                    <div class="h-as-bg-white"></div>
+                    <div class="h-as-bg-gray"></div>
+                    <div class="h-as-cp">
+                        <div class="box-orient-h h-as-cp-content">
+                            <div class="box-flex h-as-cp-text">
+                                <h5>Enterprise Office (important service applications)</h5>
+                                <dl class="box-orient-h">
+                                    <dt><img src="images/ss-01.jpg"></dt>
+                                    <dd class="box-flex">
+                                        <em>Scenario characteristics</em>
+                                        <span>Responds various office data in time, and performs concurrent processing
+                                            during peak hours. Generally, the 5-10 ms latency is required and the data
+                                            replication solution is adopted.</span>
+                                    </dd>
+                                </dl>
+                                <dl class="box-orient-h">
+                                    <dt><img src="images/ss-02.jpg"></dt>
+                                    <dd class="box-flex">
+                                        <em>Application scenarios</em>
+                                        <span>Enterprise office cloud, virtual desktop, OA system, and email.</span>
+                                    </dd>
+                                </dl>
+                                <dl class="box-orient-h">
+                                    <dt><img src="images/ss-03.jpg"></dt>
+                                    <dd class="box-flex">
+                                        <em>Recommended solution</em>
+                                        <span>It is advised that OceanStor DJ be used with OceanStor F V5 series and
+                                            FusionStorage.</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                            <div class="box-flex h-as-v">
+                                <canvas id="canvas-as-2" width="600" height="600"></canvas>
+                                <div class="h-as-v-cinfo">
+                                    <h5>OceanStor DJ + OceanStor F V5/FusionStorage</h5>
+                                    <div class="h-as-v-yuan-box">
+                                        <div class="h-as-v-yuan">
+                                            <i class="icon icon-office"></i>
+                                            <em>Office</em>
+                                        </div>
+                                        <div class="h-as-v-yuan">
+                                            <i class="icon icon-desktop"></i>
+                                            <em>Desktop</em>
+                                        </div>
+                                        <div class="h-as-v-yuan">
+                                            <i class="icon icon-oa"></i>
+                                            <em>OA</em>
+                                        </div>
+                                        <div class="h-as-v-yuan">
+                                            <i class="icon icon-email"></i>
+                                            <em>Email</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section" id="section5">
+            <div class="h-as-bg">
+                <div class="h-as">
+                    <div class="h-as-bg-gray"></div>
+                    <div class="h-as-bg-white"></div>
+                    <div class="h-as-cp">
+                        <div class="box-orient-h h-as-cp-content">
+                            <div class="box-flex h-as-v">
+                                <canvas id="canvas-as-3" width="600" height="600"></canvas>
+                                <div class="h-as-v-cinfo">
+                                    <h5>OceanStor DJ + FusionStorage</h5>
+                                    <div class="h-as-v-yuan-box">
+                                        <div class="h-as-v-yuan">
+                                            <i class="icon icon-document"></i>
+                                            <em>Document</em>
+                                        </div>
+                                        <div class="h-as-v-yuan">
+                                            <i class="icon icon-music"></i>
+                                            <em>Music</em>
+                                        </div>
+                                        <div class="h-as-v-yuan">
+                                            <i class="icon icon-video"></i>
+                                            <em>Video</em>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-flex h-as-cp-text">
+                                <h5>Backup and Archiving</h5>
+                                <dl class="box-orient-h">
+                                    <dt><img src="images/ss-01.jpg"></dt>
+                                    <dd class="box-flex">
+                                        <em>Scenario characteristics</em>
+                                        <span>A large amount of data in an enterprise cannot be directly deleted due to
+                                            compliance requirements. Therefore, low-cost storage is required and data
+                                            can be retrieved from the backup system. This type of data requires lower
+                                            system performance. If the latency is not greater than 20 ms, customer
+                                            experiences will not be affected.</span>
+                                    </dd>
+                                </dl>
+                                <dl class="box-orient-h">
+                                    <dt><img src="images/ss-02.jpg"></dt>
+                                    <dd class="box-flex">
+                                        <em>Application scenarios</em>
+                                        <span>Archiving of enterprise office documents, music, and videos which
+                                            requires system with elastic scalability and low cost.</span>
+                                    </dd>
+                                </dl>
+                                <dl class="box-orient-h">
+                                    <dt><img src="images/ss-03.jpg"></dt>
+                                    <dd class="box-flex">
+                                        <em>Recommended solution</em>
+                                        <span>It is recommended that OceanStor DJ be used together with FusionStorage.</span>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="h-footer-bg">
+        <div class="h-footer">
+            <p>Copyright © 2018 Huawei Technologies Co., Ltd. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- 预加载动画图片 -->
+    <img class="h-preloading" src="images/StaasBanner.png">
+    <img class="h-preloading" src="images/staas.png">
+    <img class="h-preloading" src="images/sso-1.png">
+    <img class="h-preloading" src="images/sso-2.png">
+    <img class="h-preloading" src="images/sso-3.png">
+
+
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/dist/jquery.fullpage.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullPage').fullpage({
+                //每一页幻灯片的内容是否垂直居中
+                verticalCentered: false,
+                //字体是否随着窗口缩放而缩放
+                resize: true,
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Storage as a Service(STaaS)', 'STaaS solution overview', 'Advantages', 'Core Enterprise Service Applications(mission-critical applications)', 'Enterprise Office(important service applications)', 'Backup and Archiving'],
+                afterLoad: function (anchorLink, index) {
+                    if (index == 1) {
+                        //banner动画
+                        var bOpt = {
+                            "obj": "#canvas-banner",
+                            "url": "images/StaasBanner.png",
+                            "xnum": 5,
+                            "ynum": 6
+                        }
+                        initMove(bOpt);
+                    } else if (index == 2) {
+                        var bOpt = {
+                            "obj": "#canvas-sso",
+                            "url": "images/staas.png",
+                            "xnum": 5,
+                            "ynum": 6
+                        }
+                        initMove(bOpt);
+                        /*clearCanvas("#canvas-banner");*/
+                    } else if (index == 3) {
+                        /*clearCanvas("#canvas-sso");
+                        clearCanvas("#canvas-as-1");*/
+                    } else if (index == 4) {
+                        var bOpt = {
+                            "obj": "#canvas-as-1",
+                            "url": "images/sso-1.png",
+                            "xnum": 5,
+                            "ynum": 9
+                        }
+                        initMove(bOpt);
+                        /*clearCanvas("#canvas-as-2");*/
+                    } else if (index == 5) {
+                        var bOpt = {
+                            "obj": "#canvas-as-2",
+                            "url": "images/sso-2.png",
+                            "xnum": 5,
+                            "ynum": 8
+                        }
+                        initMove(bOpt);
+                        clearCanvas("#canvas-as-1");
+                        clearCanvas("#canvas-as-3");
+                    } else if (index == 6) {
+                        var bOpt = {
+                            "obj": "#canvas-as-3",
+                            "url": "images/sso-3.png",
+                            "xnum": 5,
+                            "ynum": 8
+                        }
+                        initMove(bOpt);
+                        clearCanvas("#canvas-as-2");
+                    }
+
+                    if (index == $(".section").length) {
+                        $(".h-footer-bg").show().addClass("slideInUp animated");
+                    }
+                },
+                onLeave: function (index, direction) {
+                    $(".h-footer-bg").removeClass("slideInUp animated").hide();
+                }
+            });
+
+            document.cookie = "language=en";
+        });
+    </script>
+</body>
+
+</html>
